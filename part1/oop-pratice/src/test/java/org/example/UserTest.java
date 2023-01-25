@@ -14,7 +14,6 @@ class UserTest {
     public void passwordTest() throws Exception{
         //given
         User user = new User();
-
         //when
         user.initPassword(new CorrectFixedPasswordGenerator()); //검증을 위해 생성
         user.initPassword(()->"abcdefgh"); //검증을 위해 생성
@@ -22,7 +21,6 @@ class UserTest {
         //then
         assertThat(user.getPassword()).isNotNull();
     }
-
 
     @DisplayName("패스워드가 요구사항에 부합되지 않아 초기화가 되지 않는다")
     @Test

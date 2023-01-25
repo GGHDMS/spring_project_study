@@ -8,7 +8,6 @@ public class User {
 //        RandomPasswordGenerator randomPasswordGenerator = new RandomPasswordGenerator(); // 직접 넣으면 테스트 하기 힘들다
 
         String password = passwordGenerator.generatePassword();
-
         /**
          * 비밀번호는 최소 8자 이상 12자 이하여야 한다.
          */
